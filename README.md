@@ -32,11 +32,21 @@ Shade the StandalonePluginScreen class into your plugin:
 </dependencies>
 ```
 
-Now, create a file called `META-INF/MANIFEST.MF` in your resources directory with the following content:
+Now you just have to declare the StandalonePluginScreen class to be the main class in your MANIFEST.MF file:
 
-```manifest
-Main-Class: com.jeff_media.standalonepluginscreen.StandalonePluginScreen
-
+```xml
+<plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-jar-plugin</artifactId>
+    <version>3.1.0</version>
+    <configuration>
+        <archive>
+            <manifest>
+                <mainClass>com.jeff_media.standalonepluginscreen.StandalonePluginScreen</mainClass>
+            </manifest>
+        </archive>
+    </configuration>
+</plugin>
 ```
 
 **Important:** Your MANIFEST.MF file **must** end with a new line or carriage return.
