@@ -5,6 +5,12 @@ If they decide to run your .jar file directly, they will be shown this screen:
 
 ![](https://static.jeff-media.com/img/standalonepluginscreen.png)
 
+Your plugin name and version will be read automatically from your plugin.yml file.
+
+## Todo
+
+1. Make message configurable using a resource file
+
 ## Usage
 Shade the StandalonePluginScreen class into your plugin:
 
