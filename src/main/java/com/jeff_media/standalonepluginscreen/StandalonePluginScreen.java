@@ -1,5 +1,8 @@
 package com.jeff_media.standalonepluginscreen;
 
+import com.allatori.annotations.DoNotRename;
+import com.allatori.annotations.StringEncryption;
+
 import javax.swing.*;
 import javax.swing.event.HyperlinkEvent;
 import java.awt.*;
@@ -12,6 +15,8 @@ import java.util.Arrays;
 import java.util.Objects;
 import java.util.stream.Collectors;
 
+@DoNotRename
+@StringEncryption("disable")
 public final class StandalonePluginScreen {
 
     private static final String SETUP_SPIGOT_LINK = "https://www.spigotmc.org/wiki/spigot-installation/";
@@ -49,6 +54,7 @@ public final class StandalonePluginScreen {
         PLUGIN_VERSION = version;
     }
 
+    @DoNotRename
     public static void main(String[] args) {
         final JLabel label = new JLabel();
         final Font font = label.getFont();
