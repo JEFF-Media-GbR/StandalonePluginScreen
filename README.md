@@ -59,5 +59,3 @@ If you're using the shade plugin's `minimizeJar` option, you also have to includ
     </includes>
 </filter>
 ```
-
-**Important:** Your MANIFEST.MF file **must** end with a new line or carriage return.
