@@ -49,4 +49,15 @@ Now you just have to declare the StandalonePluginScreen class to be the main cla
 </plugin>
 ```
 
+If you're using the shade plugin's `minimizeJar` option, you also have to include the artifact in a filter:
+
+```xml
+<filter>
+    <artifact>com.jeff_media:StandalonePluginScreen</artifact>
+    <includes>
+        <include>**</include>
+    </includes>
+</filter>
+```
+
 **Important:** Your MANIFEST.MF file **must** end with a new line or carriage return.
