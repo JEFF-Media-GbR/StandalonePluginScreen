@@ -1,8 +1,6 @@
 package com.jeff_media.standalonepluginscreen;
 
-import com.allatori.annotations.StringEncryption;
-
-@StringEncryption("disable")
+//@StringEncryption("disable")
 public class CLINagMessage extends NagMessage {
 
     @Override
