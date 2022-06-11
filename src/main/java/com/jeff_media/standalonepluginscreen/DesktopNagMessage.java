@@ -1,5 +1,8 @@
 package com.jeff_media.standalonepluginscreen;
 
+import com.allatori.annotations.StringEncryption;
+import oracle.jrockit.jfr.JFR;
+
 import javax.swing.*;
 import javax.swing.event.HyperlinkEvent;
 import java.awt.*;
@@ -7,7 +10,7 @@ import java.io.IOException;
 import java.net.URISyntaxException;
 import java.util.stream.Collectors;
 
-//@StringEncryption("disable")
+@StringEncryption("disable")
 public final class DesktopNagMessage extends NagMessage {
 
     @Override
