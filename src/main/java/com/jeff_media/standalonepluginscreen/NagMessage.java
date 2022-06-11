@@ -37,8 +37,8 @@ public abstract class NagMessage {
         PLUGIN_VERSION = version;
 
         String title = "{plugin} {version} requires Spigot";
-        String discordLink = "https://discord.jeff-media.com/";
-        String spigotLink = "https://www.spigotmc.org/wiki/spigot-installation/";
+        String discordLink = "No discord link found";
+        String spigotLink = "No spigot link found";
         String[] message = {
                 "Thanks for downloading {plugin} {version}!",
                 "",
@@ -85,7 +85,7 @@ public abstract class NagMessage {
     private static String getStringFromYaml(String field, java.util.List<String> lines, String defaultValue) {
         return lines.stream()
                 .filter(line -> line.split(":")[0].trim().equals(field))
-                .map(line -> line.split(":")[1].replace("\"", "").trim())
+                .map(line -> line.split(":", 2)[1].replace("\"", "").trim())
                 .findFirst().orElse(defaultValue);
     }
 
